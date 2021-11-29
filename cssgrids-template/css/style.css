@@ -1,0 +1,103 @@
+/************** Dont change anything in the body ******************/
+body {
+	background: url(../img/12_col.gif) center top repeat-y;
+	background-size: 90%;
+}
+/***********************************************************/
+
+/* Begin coding your solution below */
+
+.container {
+	/* border: 1px solid black; */
+	width: 90%;
+	height: 900px;
+	margin: auto;
+	display: grid;
+
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	gap: 20px;
+
+}
+
+#header {
+	border: 1px solid black;
+	grid-column-start: 1;
+	grid-column-end: 13;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+[id*="box"] {
+	border: 1px solid black;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+#box1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#box2 {
+	grid-column-start: 3;
+	grid-column-end: 11;
+}
+
+#box3 {
+	grid-column-start: 11;
+	grid-column-end: 13;
+}
+
+[id*="content"] {
+	border: 1px solid black;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+#content {
+	grid-column-start: 1;
+	grid-column-end: 10;
+}
+
+#content-sidebar {
+	grid-column-start: 10;
+	grid-column-end: 13;
+}
+
+
+
+#footer {
+	border:  1px solid black;
+	grid-column-start: 1;
+	grid-column-end: 13;
+
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 1;
+}
+
+#footer1 {
+	border: 1px solid black;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	margin: 10px 10px;
+}
+#footer2 {
+	border: 1px solid black;
+	grid-column-start: 4;
+	grid-column-end: 7;
+	margin: 10px 10px;
+}
+#footer3 {
+	border: 1px solid black;
+	grid-column-start: 7;
+	grid-column-end: 10;
+	margin: 10px 10px;
+}
+#footer4 {
+	border: 1px solid black;
+	grid-column-start: 10;
+	grid-column-end: 13;
+	margin: 10px 10px;
+}

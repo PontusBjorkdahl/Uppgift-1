@@ -4,12 +4,12 @@
 		height: 180px;
 	}
 
-	[class*='box'] {
+	[class*="box"] {
 		height: 180px;
 		grid-column: span 4;
 	}
 
-	[class*='content'] {
+	[class*="content"] {
 		height: 180px;
 		grid-column: span 6;
 	}
@@ -17,8 +17,8 @@
 	#footer {
 		height: 360px;
 		border:  1px solid black;
-		grid-column: 1 / 13;
-		grid-row: 4 / 6;
+		grid-column: span 12;
+		grid-row: span 2;
 	
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
@@ -26,7 +26,7 @@
 		gap: 0.2%;
 	}
 
-	[class*='footer'] {
+	[class*="footer"] {
 		grid-column: span 6;
 	}
 }

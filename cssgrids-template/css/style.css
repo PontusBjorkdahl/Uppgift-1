@@ -16,7 +16,6 @@ body {
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(5, 1fr);
 	gap: 2%;
-
 }
 
 #header {
@@ -26,7 +25,7 @@ body {
 	grid-row: 1 / 2;
 }
 
-[class*='box'] {
+[class*="box"] {
 	height: 200px;	
 	border: 1px solid black;
 	grid-row: 2 / 3;
@@ -45,7 +44,7 @@ body {
 	grid-column: 11 / 13;
 }
 
-[class*='content'] {
+[class*="content"] {
 	height: 200px;
 	border: 1px solid black;
 	grid-row: 3 / 4;
@@ -72,7 +71,7 @@ body {
 	gap: 1%;
 }
 
-[class*='footer'] {
+[class*="footer"] {
 	margin: 8px;
 }
 
